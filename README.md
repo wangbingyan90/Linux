@@ -48,15 +48,18 @@ sudo chmod 644 gdm-password
 
 
 
-
+###  root 用户没有声音
 
 1. 短暂开启（本次登陆开启）
+
 终端运行下面命令：
 
-# pulseaudio --start --log-target=syslog
-1
+     pulseaudio --start --log-target=syslog
+
+
 2.永久开启（每次登陆自动开启）
 # vi /root/.profile
-1
+
+
 新增一行，加上pulseaudio --start --log-target=syslog
 
